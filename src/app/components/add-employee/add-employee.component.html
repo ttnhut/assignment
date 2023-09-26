@@ -1,0 +1,19 @@
+<mat-tab-group selectedIndex = '1' class="header">
+    <mat-tab label="Home"> </mat-tab>
+    <mat-tab label="Employee">
+            <form class="user-form">
+                <label for="name">Name &nbsp;</label>
+                <input type="text" id="name" name="name" [(ngModel)] = 'employee.name'/>
+                <label for="dept">Dept &nbsp;</label>
+                <input type="text" id="dept" name="dept" [(ngModel)] = 'employee.dept'/>
+                <label for="age">Age &nbsp;</label>
+                <input type="number" id="age" name="age" [(ngModel)] = 'employee.age'/>
+                <a [routerLink]="'/employee'">
+                    <button mat-button color="primary" (onclick)="saveEmployee()">Save</button>
+                    <button mat-button color="primary">Cancel</button>
+                </a>
+            </form>
+    </mat-tab>
+    <mat-tab label="About">  </mat-tab>
+</mat-tab-group>
+{{employee | json}}

@@ -1,0 +1,10 @@
+.header {
+    width: 600px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+p {
+    padding: 100px 0px;
+    font-weight: 500;
+}
